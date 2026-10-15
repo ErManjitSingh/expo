@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Libre Baskerville", Georgia, "Times New Roman", serif;
+
+  /* Logo palette: charcoal · olive · cream */
+  --color-brand-50: #f5f8eb;
+  --color-brand-100: #e8efd0;
+  --color-brand-200: #d4e0a8;
+  --color-brand-300: #b8cb72;
+  --color-brand-400: #a3ba55;
+  --color-brand-500: #94a843;
+  --color-brand-600: #7a8a35;
+  --color-brand-700: #5f6c2a;
+  --color-brand-800: #4a5424;
+
+  --color-cream-50: #fffef5;
+  --color-cream-100: #fbf6c8;
+  --color-cream-200: #f4e87c;
+  --color-cream-300: #e6d45a;
+
+  --color-ink: #262626;
+  --color-muted: #6b6b6b;
+  --color-surface: #ffffff;
+  --color-canvas: #f6f5f0;
+  --color-line: #e5e2d8;
+
+  --radius-card: 1.125rem;
+  --shadow-soft: 0 10px 36px rgba(38, 38, 38, 0.08);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-canvas font-sans text-ink antialiased;
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-ink;
+  }
+}
+
+@layer utilities {
+  .container-emb {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .text-display {
+    font-family: var(--font-display);
+  }
+
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}

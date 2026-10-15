@@ -1,0 +1,16 @@
+export { User } from './User';
+export { Destination } from './Destination';
+export { Package } from './Package';
+export { Hotel } from './Hotel';
+export { Room } from './Room';
+export { Cab } from './Cab';
+export { Activity } from './Activity';
+export { Booking } from './Booking';
+export { Enquiry } from './Enquiry';
+export { Review } from './Review';
+export { Blog } from './Blog';
+export { Offer } from './Offer';
+export { Coupon } from './Coupon';
+export { Category } from './Category';
+export { FAQ } from './FAQ';
+export { Newsletter } from './Newsletter';
